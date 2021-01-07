@@ -10,6 +10,12 @@ public class Bumper : MonoBehaviour
     Vector3 dir;
     public GameObject ball;
 
+    public void Start()
+    {
+        ball = GameObject.FindGameObjectWithTag("Ball"); 
+
+    }
+
     private void Update()
     {
         if (IsPlayer)
